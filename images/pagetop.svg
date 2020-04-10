@@ -1,0 +1,22 @@
+<svg id="pagetop.svg" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6d6155;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_9" data-name="長方形 9" class="cls-1" width="70" height="70"/>
+  <g id="icon">
+    <rect id="長方形_10" data-name="長方形 10" class="cls-2" x="23.812" y="23.81" width="22.376" height="1.22"/>
+    <path id="シェイプ_3" data-name="シェイプ 3" class="cls-3" d="M673.808,7470.46l1.591,1.22,8.53-7.8v13.32h2.154v-13.06l8.54,7.61,1.569-1.24-11.367-10.12Z" transform="translate(-650 -7431)"/>
+  </g>
+</svg>

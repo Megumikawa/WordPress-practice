@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="24" viewBox="0 0 16 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5f5f5f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="hamburger-arrow.svg" class="cls-1" d="M32.978,1070L46,1058l-13.023-12L30,1048.71,40.085,1058,30,1067.29Z" transform="translate(-30 -1046)"/>
+</svg>

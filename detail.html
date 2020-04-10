@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feuille</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+
+
+  <body>
+    <div class="header-wrapper">
+      <header class="header">
+        <nav id="js_btn_menu" class="btn-menu">
+          <img class="btn-menu-close" src="images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">
+          <img class="btn-menu-open" src="images/hamburger.svg" alt="ハンバーガーメニュー" width="20" height="14">
+        </nav>
+        <span class="logo"><a href="index.html"><img src="images/logo.svg" alt="Feuille" width="72" height="38"></a></span>
+        <nav class="pc-global-menu">
+          <ul>
+            <li><a href="#">NEW ITEM</a></li>
+            <li class="js-category-icon"><a href="category.html">CATEGORY<img src="images/nav-downarrow.svg" alt="カテゴリーの詳細を表示" width="6" height="4"></a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">GUIDE</a></li>
+          </ul>
+          <!-- ▼カテゴリーメガメニュ▼ -->
+          <div class="js-category-icon">
+            <div class="megamenu">
+              <ul class="megamenu-content">
+                <li><a href="category.html">ピアス</a></li>
+                <li><a href="category.html">イヤリング</a></li>
+                <li><a href="category.html">その他</a></li>
+              </ul>
+              <div class="all-item"><a href="category.html">全てのアイテム</a></div>
+            </div>
+          </div>
+          <!-- ▲カテゴリーメガメニュ▲ -->
+        </nav>
+        <!-- ▼SP用nav▼ -->
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#"><img src="images/search-icon.svg" alt="検索する" width="21" height="20"></a></li>
+            <li class="sp-cart-icon"><a href="#"><img src="images/cart-icon.svg" alt="カートページへ" width="20" height="20"><span class="sp-cart-counter">0</span></a></li>
+          </ul>
+        </nav>
+        <div class="pc-header-nav">
+          <nav class="pc-nav-block">
+            <ul>
+              <li><a href="#"><img src="images/login-icon.svg" alt="マイページへログインする" width="16" height="18">LOGIN</a></li>
+              <li><a href="#"><img src="images/favorite-icon.svg" alt="お気に入り画面へアクセスする" width="20" height="18">FAVORITE</a></li>
+              <li class="pc-cart-icon"><a href="#"><img src="images/cart-icon.svg" alt="ショッピングカートへアクセスする" width="20" height="20"><span class="pc-cart-counter">0</span></a></li>
+            </ul>
+          </nav>
+          <form id="search_form">
+            <div class="pc-search-block">
+              <input id="searchbox" name="searchbox" type="search" placeholder="SEARCH ITEMS">
+              <input id="submit" type="submit" value="">
+            </div>
+          </form>
+        </div>
+      </header>
+    </div>
+    <!-- ▼ハンバーガーメニュー始まり▼ -->
+    <div id="js_menu_contents" class="hamburger-container">
+      <section class="hamburger-checked-items">
+        <h2 class="hamburger-title-block">CHECKED ITEMS</h2>
+        <p class="hamburger-sub-title">閲覧履歴</p>
+        <ul class="checked-items">
+          <li><img src="images/sp/checked-items-01.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/sp/checked-items-02.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/sp/checked-items-03.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/sp/checked-items-04.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/sp/checked-items-05.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+        </ul>
+      </section>
+      <div class="hamburger-main">
+        <ul class="hamburger-main-menu">
+          <li><a href="#">ログイン</a></li>
+          <li><a href="#">新規会員登録</a></li>
+          <li id="js_hamburger_search_category" class="hamburger-search-category">
+            <a>カテゴリーから探す</a>
+            <ul id="js_humburger_category_child" class="hamburger-category-child">
+              <li><a href="category.html"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+              <li><a href="category.html"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+              <li><a href="category.html"><img src="images/sp/hamburger-arrow.svg" alt="子カテゴリーへアクセス" width="63" height="63">子カテゴリー名</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="hamburger-footer">
+        <ul class="hamburger-footer-menu">
+          <li><a href="#">新着情報</a></li>
+          <li><a href="#">ショッピングガイド</a></li>
+          <li><a href="#">新着アイテム</a></li>
+          <li><a href="#">ショッピングカート</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">特定商取引に基づく表示</a>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">よくあるご質問</a>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <ul class="hamburger-sns-block">
+          <li><a href="#"><img src="images/sp/hamburger-instagram.svg" alt="インスタグラムへアクセスする" width="57" height="57"></a></li>
+          <li><a href="#"><img src="images/sp/hamburger-twitter.svg" alt="ツイッターへアクセスする" width="71" height="57"></a></li>
+          <li><a href="#"><img src="images/sp/hamburger-facebook.svg" alt="フェイスブックへアクセスする" width="57" height="57"></a></li>
+        </ul>
+        <p class="js-btn-close"><img src="images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">閉じる</p>
+      </div>
+    </div>
+    <!-- ▲ハンバーガーメニュー終わり▲ -->
+
+    <div class="detail-container">
+      <ol class="breadcrumb">
+        <li><a href="index.html">ショップ名</a></li>
+        <li><a href="category.html">ピアス</a></li>
+        <li>スエードタッセルとゴールドパーツのピアス</li>
+      </ol>
+      <div class="detail-items-block">
+        <div class="detail-photo">
+          <ul id="js_detail_photo" class="detail-bxSlider">
+            <li><img src="images/new-item01.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="220" height="220"></li>
+            <li><img src="images/detail-img-01.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="130" height="130"></li>
+            <li><img src="images/detail-img-02.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="130" height="130"></li>
+          </ul>
+          <div class="detail-bxSlider-thumb">
+            <a data-slide-index="0" href="#"><img src="images/new-item01.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="220" height="220"></a>
+            <a data-slide-index="1" href="#"><img src="images/detail-img-01.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="130" height="130"></a>
+            <a data-slide-index="2" href="#"><img src="images/detail-img-02.jpg" alt="スエードタッセルとゴールドパーツのピアス" width="130" height="130"></a>
+          </div>
+        </div>
+        <div class="detail-info">
+          <section class="detail-info-top">
+            <span>ピアス</span>
+            <h1 class="detail-h1">スエードタッセルとゴールドパーツのピアス</h1>
+            <div class="detail-info-price">¥00,000<p class="tax-included">（税込）</p></div>
+          </section>
+          <ul class="detail-moreinfo-wrapper">
+            <li class="detail-moreinfo">
+              <figure class="detail-moreinfo-photo">
+                <img src="images/detail-img-01.jpg" alt="マスタード色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+                <figcaption>マスタード</figcaption>
+              </figure>
+              <p>size/free</p>
+              <div class="btn-add-cart"><a href="#"><img src="images/cart-white.svg" alt="カートへ入れる" width="16" height="16">カートに入れる</a></div>
+              <div class="detail-favorite"><img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20"></div>
+            </li>
+            <li class="detail-moreinfo">
+              <figure class="detail-moreinfo-photo">
+              <img src="images/detail-img-03.jpg" alt="グレー色スエードタッセルとゴールドパーツのピアス" width="130" height="130">
+              <figcaption>グレー</figcaption>
+              </figure>
+              <p>size/free</p>
+              <div class="btn-add-cart2"><a>SOLD OUT</a></div>
+              <div class="detail-favorite"><img class="favorite-normal" src="images/favorite-icon.svg" alt="お気に入り" width="20" height="20"></div>
+            </li>
+          </ul>
+          <div class="sp-select-item"><a href="#"><img src="images/cart-white.svg" alt="カートへ入れる" width="16" height="16">カラー・サイズを選択する</a></div>
+          <div class="detail-summary">
+            <p>小さなゴールドチャームとタッセルがゆらゆらと揺れるとてもかわいいピアスです。</p>
+            <p>ポスト部分には金属アレルギーを引き起こしにくいサージカルステンレス製のパーツを使用しています。</p>
+            <p>こちらはイヤリングパーツに変更可能です。カートへ入れる際に購入オプションより選択してください。</p>
+          </div>
+          <div class="detail-summary-size">
+            <span>サイズ</span>
+            <dl>
+              <dt>フープパーツ</dt>
+              <dd>約15mm</dd>
+              <dt>タッセル</dt>
+              <dd>約50mm</dd>
+              <dt>全長</dt>
+              <dd>約80mm</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <section class="recommend-items-block">
+        <div class="recommend-items-block-innerwrap">
+          <h2 class="title-block">RECOMMEND ITEMS</h2>
+          <p class="sub-title">オススメアイテム</p>
+          <ul id="js_recommend_slider" class="recommend-items">
+            <li>
+              <img src="images/new-item04.jpg" alt="クリアチェーンピアス" width="220" height="220">
+              <h3 class="product-name">クリアチェーンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item05.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item06.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item07.jpg" alt="ゴールドプレート×クリアフープの大ぶりピアス" width="220" height="220">
+              <h3 class="product-name">ゴールドプレート×クリアフープの大ぶりピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+            <li>
+              <img src="images/new-item08.jpg" alt="ドライフラワーレジンピアス" width="220" height="220">
+              <h3 class="product-name">ドライフラワーレジンピアス</h3>
+              <p class="product-price">¥00,000</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="checked-items-block">
+        <h2 class="title-block">CHECKED ITEMS</h2>
+        <p class="sub-title">閲覧履歴</p>
+        <ul id="bottom_slider" class="category-checked-items">
+          <li><img src="images/ranking-item-06.jpg" alt="ピアス閲覧商品" width="330" height="330"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/sp/checked-items-02.png" alt="ピアス閲覧商品" width="126" height="126"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-04.jpg" alt="ピアス閲覧商品" width="330" height="330"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-05.jpg" alt="ピアス閲覧商品" width="96" height="96"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-06.jpg" alt="ピアス閲覧商品" width="96" height="96"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-07.jpg" alt="ピアス閲覧商品" width="96" height="96"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-08.jpg" alt="ピアス閲覧商品" width="96" height="96"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/ranking-item-02.jpg" alt="ピアス閲覧商品" width="330" height="330"><P class="checked-items-price">¥00,000</p></li>
+          <li><img src="images/item-09.jpg" alt="ピアス閲覧商品" width="96" height="96"><P class="checked-items-price">¥00,000</p></li>
+        </ul>
+      </section>
+    </div>
+    <div id="pagetop" class="pagetop"><img src="images/pagetop.svg" alt="ページトップ" width="35" height="35"></div>
+
+    <footer>
+      <div class="footer-nav-wrap">
+        <section class="footer-nav">
+          <h3 class="title-footer-nav">SHOPPING NAVI</h3>
+          <ul class="footer-shopping-nav">
+            <li><a href="#">新着情報</a></li>
+            <li><a href="#">ショッピングガイド</a></li>
+            <li><a href="#">新着アイテム</a></li>
+            <li><a href="#">ショッピングカート</a></li>
+          </ul>
+        </section>
+        <section class="footer-nav">
+          <h3 class="title-footer-nav">FOR CUSTOMER</h3>
+          <ul class="footer-customer-nav">
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特定商取引に基づく表示</a></li>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">よくあるご質問</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </section>
+        <section class="footer-nav">
+          <h3 class="title-footer-nav">SIGN IN/UP</h3>
+          <ul class="footer-membership-nav">
+            <li><a href="#">マイページ/ログイン</a></li>
+            <li><a href="#">新規会員登録</a></li>
+            <li><a href="#">ご利用規約</a></li>
+          </ul>
+        </section>
+        <section class="footer-nav">
+          <h3 class="title-footer-nav">OFFICIAL SNS</h3>
+          <ul class="footer-sns-nav">
+            <li><a href="#"><img src="images/instagram-icon.svg" alt="インスタグラムへアクセス" width="10" height="10"></a></li>
+            <li><a href="#"><img src="images/twitter-icon.svg" alt="ツイッターへアクセス" width="14" height="10"></a></li>
+            <li><a href="#"><img src="images/facebook-icon.svg" alt="フェイスブックへアクセス" width="10" height="10"></a></li>
+          </ul>
+        </section>
+      </div>
+      <section class="footer-access-guide">
+        <div class="title-footer-nav-wrap">
+          <h3 class="title-footer-nav">ACCESS GUIDE</h3>
+          <p>Feuille</p>
+          <address>〒880-0811 宮崎県宮崎市錦町１丁目１<br><a class="tel" href="tel:0000-00-0000">TEL：0000-00-0000</a> / Mail：mag@example.com</address>
+          <nav class="btn-view-map"><a href="#">VIEW MAP<img src="images/viewmap-icon.svg" alt="google mapを開く" width="10" height="10"></a></nav>
+        </div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.681869380904!2d131.42263511477398!3d31.915240034731255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3538b7c73abedf53%3A0x1e3b13cc6b1915a5!2z5qCq5byP5Lya56S-44G-44Gq44Gz44Go!5e0!3m2!1sja!2sjp!4v1583997519272!5m2!1sja!2sjp" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+      </section>
+      <small class="copyright">&copy;Copyright</small>
+    </footer>
+  </body>
+</html>

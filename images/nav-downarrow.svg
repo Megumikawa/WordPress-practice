@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6" height="4" viewBox="0 0 6 4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="nav-downarrow.svg" class="cls-1" d="M674,57.744L677,61l3-3.256L679.323,57,677,59.521,674.677,57Z" transform="translate(-674 -57)"/>
+</svg>

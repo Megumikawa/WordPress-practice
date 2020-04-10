@@ -1,0 +1,12 @@
+<svg id="hamburger.svg" xmlns="http://www.w3.org/2000/svg" width="40" height="32" viewBox="0 0 40 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5f5f5f;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_1" data-name="長方形 1" class="cls-1" width="40" height="4"/>
+  <rect id="長方形_1-2" data-name="長方形 1" class="cls-1" y="14" width="40" height="4"/>
+  <rect id="長方形_1-3" data-name="長方形 1" class="cls-1" y="28" width="40" height="4"/>
+</svg>
