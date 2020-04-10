@@ -15,12 +15,7 @@
         </nav>
         <h1 class="logo"><a href="index.html"><img src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="Feuille" width="72" height="38"></a></h1>
         <nav class="pc-global-menu">
-          <ul>
-            <li><a href="#">NEW ITEM</a></li>
-            <li class="js-category-icon"><a href="category.html">CATEGORY<img src="<?php echo get_template_directory_uri(); ?>/images/nav-downarrow.svg" alt="カテゴリーの詳細を表示" width="6" height="4"></a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">GUIDE</a></li>
-          </ul>
+          <?php wp_nav_menu( array('theme_location' => 'global-nav'));?>
           <!-- ▼カテゴリーメガメニュ▼ -->
           <div class="js-category-icon">
             <div class="megamenu">

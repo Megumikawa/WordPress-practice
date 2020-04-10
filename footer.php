@@ -2,30 +2,18 @@
   <div class="footer-nav-wrap">
     <section class="footer-nav">
       <h3 class="title-footer-nav">SHOPPING NAVI</h3>
-      <ul class="footer-shopping-nav">
-        <li><a href="#">新着情報</a></li>
-        <li><a href="#">ショッピングガイド</a></li>
-        <li><a href="#">新着アイテム</a></li>
-        <li><a href="#">ショッピングカート</a></li>
-      </ul>
+      <?php wp_nav_menu( array('theme_location' => 'footer-nav-1'));?>
+
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">FOR CUSTOMER</h3>
-      <ul class="footer-customer-nav">
-        <li><a href="#">プライバシーポリシー</a></li>
-        <li><a href="#">特定商取引に基づく表示</a></li>
-        <li><a href="#">会社概要</a></li>
-        <li><a href="#">よくあるご質問</a></li>
-        <li><a href="#">お問い合わせ</a></li>
-      </ul>
+      <?php wp_nav_menu( array('theme_location' => 'footer-nav-2'));?>
+
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">SIGN IN/UP</h3>
-      <ul class="footer-membership-nav">
-        <li><a href="#">マイページ/ログイン</a></li>
-        <li><a href="#">新規会員登録</a></li>
-        <li><a href="#">ご利用規約</a></li>
-      </ul>
+      <?php wp_nav_menu( array('theme_location' => 'footer-nav-3'));?>
+      
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">OFFICIAL SNS</h3>

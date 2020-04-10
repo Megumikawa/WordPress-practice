@@ -1,7 +1,26 @@
 <?php
+
 function theme_setup() {
   add_theme_support('title-tag');
-  
+
+  add_theme_support(
+  'custom-logo',
+  array(
+    'height'      => 38,
+    'width'       => 72,
+    'flex-height' => true,
+    'flex-width'  => true
+    )
+  );
+  register_nav_menus(
+    array(
+      'global-nav' =>'グローバルナビ',
+      'footer-nav-1' =>'フッターナビ1',
+      'footer-nav-2' =>'フッターナビ2',
+      'footer-nav-3' =>'フッターナビ3'
+    )
+  );
+
   theme_remove_action_head();
 }
 add_action('after_setup_theme','theme_setup');
