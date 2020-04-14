@@ -50,6 +50,7 @@
   </section>
   <small class="copyright">&copy;Copyright</small>
 </footer>
+<div id="pagetop" class="pagetop"><img src="<?php echo get_template_directory_uri(); ?>/images/pagetop.svg" alt="ページトップ" width="35" height="35"></div>
 <?php wp_footer();?>
 </body>
 </html>
