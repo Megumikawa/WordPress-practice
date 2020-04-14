@@ -1058,10 +1058,8 @@ input[type=radio] {
     display: flex;
   }
 
-  .footer-sns-nav img {
-    margin: 0 10px;
-    height: auto;
-    width: 20px;
+  .footer-sns-nav li {
+    margin-right: 10px;
   }
 
   .footer-access-guide {
@@ -1361,12 +1359,6 @@ input[type=radio] {
   .footer-nav a {
     color: #fff;
     display: inline-block;
-  }
-
-  .footer-sns-nav img {
-    height: auto;
-    margin: 3%;
-    width: 100%;
   }
 
   footer p,

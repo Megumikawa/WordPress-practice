@@ -2,25 +2,40 @@
   <div class="footer-nav-wrap">
     <section class="footer-nav">
       <h3 class="title-footer-nav">SHOPPING NAVI</h3>
-      <?php wp_nav_menu( array('theme_location' => 'footer-nav-1'));?>
+      <?php
+      wp_nav_menu( array(
+        'theme_location' => 'footer-nav-1',
+        'menu_class'=> 'footer-shopping-nav'
+      ));
+      ?>
 
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">FOR CUSTOMER</h3>
-      <?php wp_nav_menu( array('theme_location' => 'footer-nav-2'));?>
+      <?php
+      wp_nav_menu( array(
+        'theme_location' => 'footer-nav-2',
+        'menu_class'=> 'footer-customer-nav'
+      ));
+      ?>
 
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">SIGN IN/UP</h3>
-      <?php wp_nav_menu( array('theme_location' => 'footer-nav-3'));?>
+      <?php
+      wp_nav_menu( array(
+        'theme_location' => 'footer-nav-3',
+        'menu_class'=> 'footer-membership-nav'
+      ));
+      ?>
 
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">OFFICIAL SNS</h3>
       <ul class="footer-sns-nav">
-        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon.svg" alt="インスタグラムへアクセス" width="10" height="10"></a></li>
-        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg" alt="ツイッターへアクセス" width="14" height="10"></a></li>
-        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg" alt="フェイスブックへアクセス" width="10" height="10"></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-2x"></i></a></li>
       </ul>
     </section>
   </div>
