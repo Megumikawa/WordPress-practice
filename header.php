@@ -82,21 +82,16 @@
         </ul>
       </div>
       <div class="hamburger-footer">
-        <ul class="hamburger-footer-menu">
-          <li><a href="#">新着情報</a></li>
-          <li><a href="#">ショッピングガイド</a></li>
-          <li><a href="#">新着アイテム</a></li>
-          <li><a href="#">ショッピングカート</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">特定商取引に基づく表示</a>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">よくあるご質問</a>
-          <li><a href="#">お問い合わせ</a></li>
-        </ul>
+          <?php
+          wp_nav_menu( array(
+            'theme_location' => 'hambrger-footer-menu',
+            'menu_class'=> 'hamburger-footer-menu'
+          ));
+          ?>
         <ul class="hamburger-sns-block">
-          <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-instagram.svg" alt="インスタグラムへアクセスする" width="57" height="57"></a></li>
-          <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-twitter.svg" alt="ツイッターへアクセスする" width="71" height="57"></a></li>
-          <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-facebook.svg" alt="フェイスブックへアクセスする" width="57" height="57"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-instagram.svg" alt="インスタグラムへアクセスする" width="57" height="57"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-twitter.svg" alt="ツイッターへアクセスする" width="71" height="57"></a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-facebook.svg" alt="フェイスブックへアクセスする" width="57" height="57"></a></li>
         </ul>
         <p class="js-btn-close"><img src="<?php echo get_template_directory_uri(); ?>/images/sp/hamburger-closed.svg" alt="ハンバーガーメニューを閉じる" width="22" height="22">閉じる</p>
       </div>

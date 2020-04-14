@@ -13,14 +13,14 @@
     <section class="footer-nav">
       <h3 class="title-footer-nav">SIGN IN/UP</h3>
       <?php wp_nav_menu( array('theme_location' => 'footer-nav-3'));?>
-      
+
     </section>
     <section class="footer-nav">
       <h3 class="title-footer-nav">OFFICIAL SNS</h3>
       <ul class="footer-sns-nav">
-        <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon.svg" alt="インスタグラムへアクセス" width="10" height="10"></a></li>
-        <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg" alt="ツイッターへアクセス" width="14" height="10"></a></li>
-        <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg" alt="フェイスブックへアクセス" width="10" height="10"></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram-icon.svg" alt="インスタグラムへアクセス" width="10" height="10"></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter-icon.svg" alt="ツイッターへアクセス" width="14" height="10"></a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook-icon.svg" alt="フェイスブックへアクセス" width="10" height="10"></a></li>
       </ul>
     </section>
   </div>

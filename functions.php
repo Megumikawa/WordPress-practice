@@ -17,7 +17,8 @@ function theme_setup() {
       'global-nav' =>'グローバルナビ',
       'footer-nav-1' =>'フッターナビ1',
       'footer-nav-2' =>'フッターナビ2',
-      'footer-nav-3' =>'フッターナビ3'
+      'footer-nav-3' =>'フッターナビ3',
+      'hambrger-footer-menu' =>'ハンバーガーフッターナビ'
     )
   );
 
