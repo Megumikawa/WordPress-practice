@@ -53,7 +53,7 @@ $(function(){
     if (menuContents.is(':animated') === false) {
       // $('html').toggleClass('open');
       // menuContents.fadeToggle(MENUSPEED);
-      if ($(this).hasClass('open') ===true) {
+      if ($(this).hasClass('open') === true) {
         $(this).removeClass('open');
         $('html').css('overflow','');
         menuContents.fadeOut(MENUSPEED);
@@ -72,8 +72,8 @@ $(function(){
   });
 
   $('#js_hamburger_search_category').on('click',function(){
-    if ($('.hamburger-category-child').is(':animated') ===false){
-      if ($(this).hasClass('category-open') ===false) {
+    if ($('.hamburger-category-child').is(':animated') === false){
+      if ($(this).hasClass('category-open') === false) {
         $(this).addClass('category-open');
       } else {
         $(this).removeClass('category-open');
@@ -114,13 +114,7 @@ $(function(){
 
 // ハートの色の切り替え
   $('.detail-favorite').on('click',function(){
-    if ($(this).hasClass('favorite-active') ===false) {
-      $(this).addClass('favorite-active');
-      $(this).find('img').eq(0).attr('src', 'images/icon-favorite-01.svg');
-    } else {
-      $(this).removeClass('favorite-active');
-      $(this).find('img').eq(0).attr('src', 'images/favorite-icon.svg');
-    }
+    $(this).toggleClass('favorite-active');
   });
 
 });

@@ -51,6 +51,6 @@ function theme_scripts(){
 
   wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
   wp_enqueue_script('slider', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), null, true);
-  wp_enqueue_script('theme-script', get_template_directory_uri(). '/js/script.js', array('slider'), null,true);
+  wp_enqueue_script('theme-script', get_template_directory_uri(). '/js/script.js', array('slider'), $version,true);
 }
 add_action('wp_enqueue_scripts','theme_scripts');

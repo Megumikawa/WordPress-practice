@@ -611,6 +611,16 @@ input[type=radio] {
   margin-top: 10px;
 }
 
+.add-favorite {
+  display: none;
+}
+.favorite-active .none-favorite {
+  display: none;
+}
+.favorite-active .add-favorite {
+  display: block;
+}
+
 .detail-summary {
   font-size: 1.2rem;
   line-height: 1.6;
