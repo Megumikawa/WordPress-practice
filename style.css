@@ -609,16 +609,22 @@ input[type=radio] {
 
 .detail-favorite {
   margin-top: 10px;
+  position: relative;
 }
 
 .add-favorite {
   display: none;
 }
+
 .favorite-active .none-favorite {
   display: none;
 }
+
 .favorite-active .add-favorite {
   display: block;
+  position: absolute;
+  top: 0;
+
 }
 
 .detail-summary {
