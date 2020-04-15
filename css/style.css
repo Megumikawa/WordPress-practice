@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%
+}
+body {
+  background: #f2f2e8;
+  color: #594b37;
+  font-size: 1.6rem;
+  font-family: "メイリオ", Meiryo, -apple-system BlinkMacSystemFont, sans-serif;
+  line-height: 1.3;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+header, .inner-container, main .sub, .pagetop, footer, figure {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #594b37;
+}
+/* -----base----- */
+header, .breadcrumb, .inner-container, main, .sub, .pagetop, footer {
+  margin: 0 auto;
+  width: 840px;
+}
+.toplogo {
+  text-align: center;
+  margin: 26px 0;
+}
+.gnav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.gnav ul li {
+  background-color: #473916;
+  font-family: serif;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  width: 210px;
+}
+.gnav li:not(:last-child) {
+  border-right: 1px solid #000;
+}
+.gnav li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 210px;
+  padding: 21px 1px;
+  background: linear-gradient(to bottom, #8f896f, #fff 30%, #8f896f 90%);
+  z-index: 1;
+}
+.gnav li:first-child,
+.gnav li:first-child a {
+  border-radius: 5px 0 0 5px;
+}
+.gnav li:last-child,
+.gnav li:last-child a {
+  border-radius: 0 5px 5px 0;
+}
+.gnav ul li a {
+  display: block;
+  color: #fff;
+  height: 100%;
+  line-height: 42px;
+  text-decoration: none;
+}
+.gnav ul li.current-page,
+.gnav ul li.current-page a {
+  background: radial-gradient(#dfdcc4, #cfcaa4);
+  color: #594b37;
+}
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.breadcrumb ol li:not(:last-child):after {
+  content: url(../images/breadcrumb_arrow.png);
+  margin: 0 12px;
+}
+.inner-container {
+  display: flex;
+}
+main {
+  margin-right: 40px;
+}
+.h1-outer {
+  border-top: 2px solid #cdc6ac;
+  border-bottom: 2px solid #cdc6ac;
+  padding: 2px 0;
+  margin: 6px 0 28px;
+}
+main h1 {
+  border-top: 1px solid #cdc6ac;
+  border-bottom: 1px solid #cdc6ac;
+  font-size: 2.6rem;
+  padding: 34px 0 38px 58px;
+  position: relative;
+  margin: 0;
+}
+main h1::before {
+  content: url(../images/h1-icon.png);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.sub {
+  width: 230px;
+}
+.sub ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sub ul li {
+  margin: 0 0 24px;
+}
+.sub ul li a{
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.footer-head p {
+  cursor: pointer;
+  font-size: 1.6rem;
+  position: relative;
+  margin: 20px 0 10px;
+  text-align: right;
+  text-decoration: underline;
+}
+.footer-head p::before {
+  content: url(../images/bg_arrow.png);
+  position: absolute;
+  right: 148px;
+}
+.footer-head {
+  margin: 0;
+  padding: 10px 0 0;
+  border-bottom: 1px solid #ccc;
+}
+.footer-foot {
+  border-top: 1px solid #fff;
+  clear: both;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 6px;
+}
+address {
+  font-style: normal;
+  margin: 14px 0 2px;
+}
+.footer-info {
+  display: none;
+}
+
+/* -----インデックス--index----- */
+.slider-wrapper {
+  width: 840px;
+  margin: 0 auto;
+}
+.slider {
+  margin: 0;
+  padding: 0;
+}
+main h2 {
+  background: url(../images/bg_h2_head.png) no-repeat left top ;
+  border-bottom: 1px solid #c0c0c0;
+  font-size: 2rem;
+  line-height: 2.7;
+  padding: 0 0 0 26px;
+  margin: 0 0 10px 0;
+}
+.h2-outer {
+  border-bottom: 1px solid #fff;
+  height: 56px;
+  margin: 0 0 10px;
+}
+.noticed {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 16px 0;
+}
+.noticed li {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted;
+}
+.noticed time {
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 170px;
+}
+.noticed p {
+  margin: 0;
+  width: 400px;
+}
+
+/* -----結婚式場のコンセプト--concept----- */
+.concept-photo1 {
+  margin-bottom: 36px;
+}
+.concept-photo1 img {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+.concept-photo2 img {
+  float: left;
+  margin: 0 30px 0 0;
+}
+.concept-photo1::after,
+.concept-photo2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* -----プランのご案内--plan----- */
+.plan-caption h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 28px 0 0;
+  background: none;
+  border-bottom: none;
+  padding: 0;
+  line-height: 1;
+}
+.plan-caption p {
+  margin: 6px 0 34px;
+}
+.plan-table table {
+  border-collapse: collapse;
+}
+.plan-table table th, .plan-table  table td {
+  border: 1px solid;
+}
+.plan-table table thead {
+  background-color: #eee9cc;
+}
+.plan-table table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+.plan-table table tbody tr:nth-child(even) {
+  background-color: #f3f2f0;
+}
+.plan-table table th {
+  padding: 16px 40px;
+  text-align: center;
+  white-space: nowrap;
+}
+.plan-table tbody td:first-child {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+.plan-table tbody td:last-child {
+  padding: 14px 30px 14px 12px;
+  font-size: 1.5rem;
+}
+
+/* -----ブライダルフェア--bridalfair----- */
+.bridal-gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0 20px;
+}
+.bridal-gallery p {
+  margin: 28px 0;
+}
+.bridal-gallery ul li {
+  width: 180px;
+}
+.bridal-gallery ul li p {
+  font-size: 1.4rem;
+  margin: 0 0 26px;;
+}
+
+/* -----お問い合わせ--contact----- */
+.contact-caption p {
+  margin: 26px 0;
+}
+.contact-table form table {
+  border-collapse: collapse;
+}
+.contact-table table th {
+  background-color: #eee9cc;
+  border: 1px solid;
+  padding: 20px 10px;
+  text-align: left;
+  width: 200px;
+}
+.contact-table table td {
+  border: 1px solid;
+  padding: 10px;
+  width: 370px;
+}
+input[type="text"],
+input[type="email"] {
+  width: 240px;
+}
+#pref1 {
+  margin: 0 4px 0 0;
+}
+#pref2 {
+  margin: 0 4px 0 26px;
+}
+input[type="submit"] {
+  margin: 16px 0;
+  padding: 4px 10px;
+}
+textarea {
+  overflow-y: scroll;
+  height: 200px;
+  width: 100%;
+}
+input, textarea {
+  font-size: 1.6rem;
+}
+
+
+/* ---------レスポンシブ----- */
+@media screen and (min-width:768px) {
+  .gnav ul li a:hover,
+  .breadcrumb a:hover,
+  .sub ul li a:hover,
+  .footer-head p:hover {
+    opacity: .5;
+  }
+
+}
+@media screen and (max-width:767px){
+
+  header, .inner-container, .sub, .pagetop, footer {
+    margin: 0;
+    width: 100%;
+  }
+  .toplogo {
+    margin: 4% 0;
+  }
+  .gnav ul {
+    flex-wrap: wrap;
+  }
+  .gnav ul li {
+    padding: 0;
+    width: 100%;
+  }
+  .gnav li:not(:last-child)::after {
+    display: none;
+  }
+  .gnav ul li {
+    border: 1px solid #000;
+  }
+  .gnav ul li:not(:last-child) {
+    border-bottom: none;
+  }
+  .gnav li:first-child,
+  .gnav li:first-child a,
+  .gnav li:last-child,
+  .gnav li:last-child a {
+    border-radius: 0;
+  }
+  .breadcrumb {
+    margin: 0 2%;
+    width: 96%;
+  }
+  .inner-container {
+    display: block;
+    margin: 0;
+  }
+  main {
+    margin: 2%;
+    width: 96%;
+  }
+  main h1::before {
+    top: 2%;
+    left: 2%;
+  }
+  main h1 {
+    font-size: 2.4rem;
+    padding: 4% 2% 4% 16%;
+  }
+  .sub {
+    text-align: center;
+    margin: 14% 0 14%;
+  }
+  .footer-foot {
+    font-size: 1.2rem;
+  }
+  .footer-foot p {
+    margin: 0;
+  }
+  .footer-info {
+    display: block;
+  }
+  /* -----インデックス--index----- */
+  .slider-wrapper {
+    width: 100%;
+  }
+  .slider img {
+    height: auto;
+  }
+  .h2-outer {
+    width: 100%;
+  }
+  main h2 {
+    font-size: 2rem;
+    margin: 6% 0 4%;
+  }
+  .noticed {
+    margin: 0 2%;
+  }
+  .noticed li {
+    display: block;
+    width: 100%;
+  }
+  .noticed p {
+    margin: 2% 0;
+    width: 100%;
+  }
+  /* -----結婚式場のコンセプト--concept----- */
+  .concept-photo1 img, .concept-photo2 img {
+    float: none;
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .concept-photo1 p, .concept-photo2 p {
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+  }
+
+  /* -----プランのご案内--plan----- */
+  .plan-caption {
+    width: 100%;
+  }
+  .plan-table {
+    overflow-x: scroll;
+  }
+  .plan-table table {
+    width: 700px;
+  }
+
+  /* -----ブライダルフェア--bridalfair----- */
+  .bridal-gallery ul li {
+    height: auto;
+    max-width: 180px;
+    width: 48%;
+  }
+  .bridal-gallery ul li img {
+    height: auto;
+    width: 100%;
+  }
+
+/* -----お問い合わせ--contact----- */
+  .contact-caption ul {
+    margin: 10% 0;
+  }
+  .contact-table table {
+    margin: 0 2%;
+    text-align: left;
+    width: 96%;
+  }
+  .contact-table table th {
+    border: none;
+    border-radius: 5%;
+    display: block;
+    padding: 2% 4%;
+    width: 100%;
+  }
+  .contact-table table td {
+    border: none;
+    display: block;
+    padding: 4%;
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+  input[type="submit"] {
+    margin: 0 36%;
+  }
+}
