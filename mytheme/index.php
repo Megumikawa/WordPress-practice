@@ -44,7 +44,7 @@
 		</article>
 		<?php endwhile; endif; ?>
 
-		<?php if ( $wp_query ->max_num_pages > 1 ): ?>
+		<?php if ( $wp_query->max_num_pages > 1 ): ?>
 			<div class="pagenav">
 				<span class="old">
 					<?php next_posts_link( '<i class="fa fa-chevron-circle-left"></i>古い記事' ); ?>

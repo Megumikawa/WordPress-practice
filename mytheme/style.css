@@ -11,11 +11,25 @@ body {
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif
 }
 
+.container {
+	max-width: 659px;
+	margin: 0 auto;
+}
+
 /*  記事　*/
+article {
+	margin-bottom: 40px;
+}
+
 article h1 {
 	margin: 0;
 	font-size: 32px;
 	font-weight: normal;
+}
+
+article h1 a {
+	color: #000;
+	text-decoration: none;
 }
 
 /* 記事の付加情報 */
