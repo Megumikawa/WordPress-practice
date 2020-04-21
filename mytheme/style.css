@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*
 Theme Name: MY THEME
 Author: TRAVEL SKETCH
@@ -5,3 +7,56 @@ Description: This is my original theme.
 Version: 1.0
 */
 
+body {
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif
+}
+
+/*  記事　*/
+article h1 {
+	margin: 0;
+	font-size: 32px;
+	font-weight: normal;
+}
+
+/* 記事の付加情報 */
+.postinfo {
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.postinfo a {
+	color: 000;
+	text-decoration: none;
+}
+
+.postinfo .postcat {
+	margin-left: 20px;
+}
+
+.postinfo i {
+	color: #888;
+}
+
+/* 前後の記事へのリンク */
+.pagenav a {
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	color: #666;
+	font-size: 12px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.pagenav .old a {
+	float: left;
+}
+
+.pagenav .new a {
+	float: right;
+}
+
+.pavenav {
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
