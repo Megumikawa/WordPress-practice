@@ -50,6 +50,9 @@ article h1 a {
 	margin-left: 20px;
 }
 
+.postinfo .postcom {
+	margin-left: 20px;
+}
 .postinfo i {
 	color: #888;
 }
@@ -146,4 +149,118 @@ article img {
 	font-size: 14px;
 	margin: 0;
 	text-align: center;
+}
+
+/* メニュー */
+.blogmenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blogmenu .widget {
+	background-color: #e8e8e8;
+	margin-bottom: 30px;
+	padding: 20px;
+}
+
+.blogmenu .widgettitle {
+	border-right: solid 10px #4a5f7e;
+	color: #4a5f7e;
+	font-size: 14px;
+	margin: 10px 0 20px;
+}
+
+.blogmenu li a {
+	color: #666;
+	display: block;
+	font-size: 14px;
+	padding: 10px 5px;
+	text-decoration: none;
+}
+
+.blogmenu li a:hover {
+	background-color: #fff;
+}
+
+/* 見出し */
+.archive-title {
+	background-color: #eee;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0 0 40px;
+}
+
+.archive-title i {
+	background-color: #4a5f7e;
+	color: #fff;
+	padding: 15px;
+}
+
+/* コメント投稿フォーム */
+#respond p {
+	font-size: 12px;
+	margin: 0 0 20px;
+}
+
+#respond label {
+	font-size: 14px;
+}
+
+#respond input,
+#respond textarea {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 5px;
+	width: 100%;
+}
+
+#respond input[type="submit"] {
+	background-color: #e6cc1c;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	padding: 10px;
+	width: 200px;
+}
+
+#respond input[type="submit"]:hover {
+	background-color: #ff8800;
+}
+
+#respond .required {
+	color: #ff0000;
+}
+
+/* コメント */
+#comments footer {
+	background: none;
+	color: #000;
+	font-size: 12px;
+	margin: 0;
+}
+
+#comments footer a {
+	color: #000;
+}
+
+#comments footer div {
+	display: inline;
+}
+
+#comments ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#comments article {
+	border: dotted 1px #aaa;
+	margin-bottom: 10px;
+	padding: 10px 20px 20px;
+}
+
+#comments .comment-content {
+	margin-left: 30px;
 }
