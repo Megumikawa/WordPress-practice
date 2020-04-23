@@ -322,3 +322,28 @@ article img {
 .wpcf7 input[type="submit"]:hover {
 	background-color: #ffaa00;
 }
+
+/* レスポンシブの設定 */
+@media (min-width:768px){
+
+	/* 2段目 */
+	.container {
+		max-width: 1000px;
+		overflow: hidden;
+	}
+
+	.contents {
+		float: left;
+		width: 65%;
+	}
+
+	.blogmenu {
+		float: right;
+		width: 30%;
+	}
+
+	/* ナビゲーションメニュー */
+	nav li {
+		margin-right: 40px;
+	}
+}
