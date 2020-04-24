@@ -18,8 +18,10 @@
 				<p><?php bloginfo( 'description' );?></p>
 			</div>
 		</div>
+		<?php if( !is_front_page() ): ?>
 		<?php if( get_header_image() ): ?>
 			<img src="<?php header_image(); ?>" width="<?php get_custom_header()->width; ?>" height="<?php get_custom_header()->header;?>" alt="">
+		<?php endif; ?>
 		<?php endif; ?>
 		<nav>
 			<div class="container">

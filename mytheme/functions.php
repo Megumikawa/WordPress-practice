@@ -28,3 +28,6 @@ function my_more($more) {
 	return '...';
 }
 add_filter( 'excerpt_more','my_more' );
+
+// アイキャッチ画像
+add_theme_support( 'post-thumbnails' );
