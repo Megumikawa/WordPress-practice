@@ -117,6 +117,13 @@ header a {
 	margin: 5px 0 0;
 }
 
+/* ヘッダー画像 */
+header img {
+	height: auto;
+	vertical-align: bottom;
+	width: 100%;
+}
+
 /* ナビゲーションメニュー */
 nav ul {
 	font-size: 12px;
@@ -345,5 +352,27 @@ article img {
 	/* ナビゲーションメニュー */
 	nav li {
 		margin-right: 40px;
+	}
+
+	/* 記事の概要 */
+	.excerpt p {
+		font-size: 14px;
+	}
+
+	.excerpt .more a {
+		border: solid 1px #ccc;
+		border-radius: 5px;
+		color: #000;
+		padding: 5px 20px;
+		text-decoration: none;
+	}
+
+	.excerpt .more a:hover {
+		background-color: #e6cc1c;
+	}
+
+	.excerpt .more i {
+		color: #ccc;
+		margin-left: 10px;
 	}
 }
