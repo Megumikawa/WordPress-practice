@@ -441,12 +441,12 @@ article img {
 }
 
 @media (min-width: 500px){
-.topmenu {
-	overflow: hidden;
-}
+	.topmenu {
+		overflow: hidden;
+	}
 
-.link {
-	float: left;
-	width: 33.3333%;
-}
+	.link {
+		float: left;
+		width: 33.3333%;
+	}
 }
