@@ -59,7 +59,7 @@
 					</div>
 				<?php endif; ?>
 
-				<?php if( is_single() ):?>
+				<?php if( is_single() ): ?>
 				<div class="pagenav">
 					<span class="old">
 						<?php previous_post_link( '%link', '<i class="fa fa-chevron-circle-left"></i> %title' ); ?>
@@ -89,7 +89,7 @@
 
 		<div class="blogmenu">
 			<ul>
-				<?php dynamic_sidebar();?>
+				<?php dynamic_sidebar(); ?>
 				<li class="widget">
 					<ul>
 						<li><a href="<?php bloginfo( 'rss2_url' ); ?>"><i class="fa fa-rss-square"></i>RSS</a></li>

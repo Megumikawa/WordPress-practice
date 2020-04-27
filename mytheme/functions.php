@@ -2,7 +2,7 @@
 function theme_setup() {
 	add_theme_support( 'title-tag' );
 }
-add_action('after_setup_theme','theme_setup');
+	add_action( 'after_setup_theme','theme_setup' );
 
 // ウィジェット
 register_sidebar();
@@ -22,13 +22,13 @@ add_theme_support( 'custom-header', array(
 ) );
 
 // 概要(抜粋)の文字数
-function my_length($length) {
+function my_length( $length ) {
 	return 70;
 }
 add_filter( 'excerpt_mblength','my_length' );
 
 // 概要(抜粋)の省略記号
-function my_more($more) {
+function my_more( $more ) {
 	return '...';
 }
 add_filter( 'excerpt_more','my_more' );
@@ -50,8 +50,8 @@ function theme_remove_action_head(){
 }
 
 function theme_scripts(){
-	wp_enqueue_style('theme-font', 'https://fonts.googleapis.com/css?family=Acme', array(), null );
-	wp_enqueue_style('theme-fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array( 'theme-font' ), null );
-	wp_enqueue_style('theme-style', get_stylesheet_uri(), array('theme-fontawesome'), null );
+	wp_enqueue_style( 'theme-font', 'https://fonts.googleapis.com/css?family=Acme', array(), null );
+	wp_enqueue_style( 'theme-fontawesome', 'http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array( 'theme-font' ), null );
+	wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array( 'theme-fontawesome' ), null );
 }
-add_action('wp_enqueue_scripts','theme_scripts');
+	add_action( 'wp_enqueue_scripts','theme_scripts' );
