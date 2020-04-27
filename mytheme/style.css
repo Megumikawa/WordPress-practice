@@ -27,7 +27,7 @@ article {
 article h1 {
 	margin: 0;
 	font-size: 32px;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 article h1 a {
@@ -229,7 +229,7 @@ article img {
 .archive-title {
 	background-color: #eee;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 400;
 	margin: 0 0 40px;
 }
 
@@ -258,7 +258,7 @@ article img {
 	width: 100%;
 }
 
-#respond input[type="submit"] {
+#respond input[type=submit] {
 	background-color: #e6cc1c;
 	border: none;
 	cursor: pointer;
@@ -267,7 +267,7 @@ article img {
 	width: 200px;
 }
 
-#respond input[type="submit"]:hover {
+#respond input[type=submit]:hover {
 	background-color: #ff8800;
 }
 
@@ -317,7 +317,7 @@ article img {
 	width: 100%;
 }
 
-.wpcf7 input[type="submit"] {
+.wpcf7 input[type=submit] {
 	background-color: #e6cc1c;
 	border: none;
 	cursor: pointer;
@@ -326,7 +326,7 @@ article img {
 	width: 200px;
 }
 
-.wpcf7 input[type="submit"]:hover {
+.wpcf7 input[type=submit]:hover {
 	background-color: #ffaa00;
 }
 
